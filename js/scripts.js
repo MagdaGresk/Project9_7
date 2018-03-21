@@ -99,7 +99,7 @@ function checkRoundWinner(playerPick, computerPick) {
         computerResultElem.innerHTML = "Win!";
         computer.score ++;
     }
-
+setGamePoints();
 }
 
 function setGamePoints() {
