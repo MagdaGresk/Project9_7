@@ -99,11 +99,26 @@ function checkRoundWinner(playerPick, computerPick) {
         computerResultElem.innerHTML = "Win!";
         computer.score ++;
     }
-setGamePoints();
+    setGamePoints();
+    gameOver();
 }
 
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
     computerPointsElem.innerHTML = computer.score;
 }
+
+function gameOver() {
+    if (player.score == 10) {
+        alert('SUPER! ' + playerNameElem.innerText + ' you are the BIG winner')
+        gameState = 'ended'
+        setGameElements(); 
+    } else if (computer.score == 10) {
+        alert('SORRY..., try next time')
+        gameState = 'ended'
+        setGameElements();
+    }
+}
+
+
 
