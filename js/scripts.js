@@ -97,8 +97,8 @@ function checkRoundWinner(playerPick, computerPick) {
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score
     computerPointsElem.innerHTML = computer.score
-    gameOver()
 }
+gameOver()
 
 function gameOver() {
     if (player.score == 10) {
