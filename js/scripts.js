@@ -110,7 +110,10 @@ function gameOver() {
         setGameElements()
     }
 }
-gameOver()
+
+setTimeout(function () {
+    gameOver()
+}, 10)
 
 
 
