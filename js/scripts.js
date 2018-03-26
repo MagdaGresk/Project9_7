@@ -115,5 +115,7 @@ setTimeout(function () {
     gameOver()
 }, 30)
 
+gameOver()
+
 
 
