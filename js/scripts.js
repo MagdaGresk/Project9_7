@@ -113,7 +113,7 @@ function gameOver() {
 
 setTimeout(function () {
     gameOver()
-}, 100)
+}, 30)
 
 
 
