@@ -98,7 +98,6 @@ function setGamePoints() {
     playerPointsElem.innerHTML = player.score
     computerPointsElem.innerHTML = computer.score
 }
-gameOver()
 
 function gameOver() {
     if (player.score == 10) {
@@ -111,6 +110,7 @@ function gameOver() {
         setGameElements()
     }
 }
+gameOver()
 
 
 
