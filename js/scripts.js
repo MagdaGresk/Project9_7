@@ -92,12 +92,14 @@ function checkRoundWinner(playerPick, computerPick) {
         computer.score ++
     }
     setGamePoints()
-    gameOver()
 }
 
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score
     computerPointsElem.innerHTML = computer.score
+    setTimeout(function () {
+        gameOver()
+    }, 100)
 }
 
 function gameOver() {
@@ -111,7 +113,3 @@ function gameOver() {
         setGameElements()
     }
 }
-
-setTimeout(function () {
-    gameOver()
-}, 10)
